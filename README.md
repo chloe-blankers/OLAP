@@ -5,7 +5,10 @@ This program allows you to create queries in Python to calculate the minimum, ma
 
 | Argument | Description | Output Format |
 |-------|-------|-------|
-| #1 Runs locally | Yes | sha1: 302cd1d |
+| --top <k> <categorical-field-name> |
+compute the ​top k ​most common values of categorical-field-name |
+a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234”
+If the values contain double quote or newline characters, they should be escaped using the usual printf syntax, e.g. “\n” for newlines, \” for double quotes |
 | #2.i Display whales | Yes | sha1: b99c7e8 |
 | #2.ii Display observations | Yes | sha1: 0c47e24 |
 | #3 Creates new whale records | Yes | sha1: b99c7e8 |
