@@ -3,6 +3,26 @@ This program allows you to create queries in Python to calculate the minimum, ma
 
 ### Aggregates
 
+| Argument | Description |  | Output Format |
+|-------|-------|-------|
+| --top <k> <categorical-field-name> |
+compute the ​top k ​most common values of categorical-field-name |
+a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234”
+If the values contain double quote or newline characters, they should be escaped using the usual printf syntax, e.g. “\n” for newlines, \” for double quotes |
+| #2.i Display whales | Yes | sha1: b99c7e8 | @lloucks, @chloe-blankers, @LucasAntonsen |
+| #2.ii Display observations | Yes | sha1: 0c47e24 | @chloe-blankers, @LucasAntonsen, @lloucks |
+| #3 Creates new whale records | Yes | sha1: b99c7e8 | @lloucks, @LucasAntonsen |
+| #4 Creates new observation records | Yes | sha1: df8ebef, 42395aa | @chloe-blankers, @LucasAntonsen, @lloucks |
+| #5 Search whales and observations | Yes | sha1: 433b8b1, cecf0a8 | @LucasAntonsen, @lloucks |
+| #6 REST API | Yes | sha1: b917d4f, eddb6ce | @adampage13, @EricPower |
+| #7 Unit tests | Yes | sha1: 1bb994a | @adampage13 |
+| #8.i Architecture ADR | Yes | sha1: b917d4f | @adampage13, @lloucks |
+| #8.i Front-End Design ADR | Yes | sha1: 31abba8  | @EricPower |
+| #9 OO Principles and MVC design | Yes | sha1: cecf0a8 | @LucasAntonsen |
+| Bonus: JS validation | Yes | sha1: 9dd9412, 5df308d | @EricPower |
+| Bonus: Hosting | Yes | whales.ericpower.ca | @EricPower |
+| Bonus: Data store | Yes | sha1: b99c7e8 | @lloucks |
+
 --top <k> <categorical-field-name>
 compute the ​top k ​most common values of categorical-field-name
 a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234”
