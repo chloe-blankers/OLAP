@@ -6,37 +6,13 @@ This program allows you to create queries in Python to calculate the minimum, ma
 | Argument | Description | Output Format |
 |-------|-------|-------|
 | --top <k> <categorical-field-name> | compute the ​top k ​most common values of categorical-field-name | a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234” If the values contain double quote or newline characters, they should be escaped using the usual printf syntax, e.g. “\n” for newlines, \” for double quotes |
-| #2.i Display whales | Yes | sha1: b99c7e8 |
-| #2.ii Display observations | Yes | sha1: 0c47e24 |
-| #3 Creates new whale records | Yes | sha1: b99c7e8 |
-| #4 Creates new observation records | Yes | sha1: df8ebef, 42395aa |
-| #5 Search whales and observations | Yes | sha1: 433b8b1, cecf0a8 |
-| #6 REST API | Yes | sha1: b917d4f, eddb6ce |
-| #7 Unit tests | Yes | sha1: 1bb994a |
-| #8.i Architecture ADR | Yes | sha1: b917d4f |
-| #8.i Front-End Design ADR | Yes | sha1: 31abba8  |
-| #9 OO Principles and MVC design | Yes | sha1: cecf0a8 |
-| Bonus: JS validation | Yes | sha1: 9dd9412, 5df308d |
-| Bonus: Hosting | Yes | whales.ericpower.ca |
-| Bonus: Data store | Yes | sha1: b99c7e8 |
+| --min <numeric-field-name> | compute the ​minimum​value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --max <numeric-field-name> | compute the ​maximum​value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --mean <numeric-field-name> | compute the ​mean​(average) of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --sum <numeric-field-name> | compute the ​sum​of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column
+--count count​the number of records |
 
---top <k> <categorical-field-name>
-compute the ​top k ​most common values of categorical-field-name
-a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234”
-If the values contain double quote or newline characters, they should be escaped using the usual printf syntax, e.g. “\n” for newlines, \” for double quotes
---min <numeric-field-name>
-compute the ​minimum​value of numeric-field-name
-a floating point number, or “NaN” if there were no numeric values in the column
---max <numeric-field-name>
-compute the ​maximum​value of numeric-field-name
-a floating point number, or “NaN” if there were no numeric values in the column
---mean <numeric-field-name>
-compute the ​mean​(average) of numeric-field-name
-a floating point number, or “NaN” if there were no numeric values in the column
---sum <numeric-field-name>
-compute the ​sum​of numeric-field-name
-a floating point number, or “NaN” if there were no numeric values in the column
---count count​the number of records
+
 Group By
 Add optional named argument for a ​group-by --group-by categorical-field-name
 an integer, or zero if there were no records
