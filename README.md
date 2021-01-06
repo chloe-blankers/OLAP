@@ -3,7 +3,7 @@ This program allows you to create queries in Python to calculate the minimum, ma
 
 ### Aggregates
 
-| Argument | Description |  | Output Format |
+| Argument | Description | Output Format |
 |-------|-------|-------|
 | #1 Runs locally | Yes | sha1: 302cd1d |
 | #2.i Display whales | Yes | sha1: b99c7e8 |
