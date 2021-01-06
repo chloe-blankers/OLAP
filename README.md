@@ -5,17 +5,20 @@ This program allows you to create queries in Python to calculate the minimum, ma
 
 | Argument | Description | Output Format |
 |-------|-------|-------|
-| --top <k> <categorical-field-name> | compute the ​top k ​most common values of categorical-field-name | a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234” If the values contain double quote or newline characters, they should be escaped using the usual printf syntax, e.g. “\n” for newlines, \” for double quotes |
-| --min <numeric-field-name> | compute the ​minimum​value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
-| --max <numeric-field-name> | compute the ​maximum​value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
-| --mean <numeric-field-name> | compute the ​mean​(average) of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
-| --sum <numeric-field-name> | compute the ​sum​of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --top <k> <categorical-field-name> | compute the top k most common values of categorical-field-name | a string listing the top values with their counts, in descending order, e.g. “red: 456, green: 345, blue: 234” If the values contain double quote or newline characters, they should be escaped using the usual printf syntax, e.g. “\n” for newlines, \” for double quotes |
+| --min <numeric-field-name> | compute the minimum value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --max <numeric-field-name> | compute the maximum value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --mean <numeric-field-name> | compute the mean (average) of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
+| --sum <numeric-field-name> | compute the sum of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
 | --count | count the number of records | an integer, or zero if there were no records |
 
 
-Group By
-Add optional named argument for a ​group-by --group-by categorical-field-name
-an integer, or zero if there were no records
+### Group By
+--group-by <categorical-field-name>
+If it’s a valid categorical field, produce an output CSV file with one row of output per distinct value in that field, with:
+- the value of the group-by field in the first column
+- the values of any computed aggregates in subsequent columns, in the order they were specified at the command line (or just a count column, if no aggregates were requested at the command line)
+
 
 ### Example Input File
 
