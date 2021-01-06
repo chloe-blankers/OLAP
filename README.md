@@ -10,7 +10,7 @@ This program allows you to create queries in Python to calculate the minimum, ma
 | --max <numeric-field-name> | compute the ​maximum​value of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
 | --mean <numeric-field-name> | compute the ​mean​(average) of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
 | --sum <numeric-field-name> | compute the ​sum​of numeric-field-name | a floating point number, or “NaN” if there were no numeric values in the column |
-| --count | count​the number of records | an integer, or zero if there were no records |
+| --count | count the number of records | an integer, or zero if there were no records |
 
 
 Group By
