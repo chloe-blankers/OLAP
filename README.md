@@ -14,7 +14,7 @@ This program allows you to create queries in Python to calculate the minimum, ma
 
 
 ### Group By
---group-by <categorical-field-name>
+--group-by <categorical-field-name> </br>
 If it’s a valid categorical field, produce an output CSV file with one row of output per distinct value in that field, with:
 - the value of the group-by field in the first column
 - the values of any computed aggregates in subsequent columns, in the order they were specified at the command line (or just a count column, if no aggregates were requested at the command line)
