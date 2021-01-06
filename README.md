@@ -26,15 +26,15 @@ an integer, or zero if there were no records
 
 ### Example Input File
 
-Sector,Ticker,Date,Open,High,Low,Close,Volume,OpenInt
-Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0
-Financial Services,axp,6/21/72,1.4866,1.4957,1.4866,1.4866,1057078,0
-Consumer Cyclical,dis,6/21/72,1.506,1.5244,1.506,1.5151,1220068,0
-Technology,ibm,6/21/72,16.501,16.658,16.484,16.524,579628,0
-Technology,intc,6/21/72,0.01592,0.01592,0.01592,0.01592,16363089,0
-Financial Services,axp,6/22/72,1.514,1.5228,1.514,1.514,835584,0
-Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0
-Financial Services,axp,6/21/72,1.4866,1.4957,1.4866,1.4866,1057078,0
-....
+Sector,Ticker,Date,Open,High,Low,Close,Volume,OpenInt</br>
+Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0</br>
+Financial Services,axp,6/21/72,1.4866,1.4957,1.4866,1.4866,1057078,0</br>
+Consumer Cyclical,dis,6/21/72,1.506,1.5244,1.506,1.5151,1220068,0</br>
+Technology,ibm,6/21/72,16.501,16.658,16.484,16.524,579628,0</br>
+Technology,intc,6/21/72,0.01592,0.01592,0.01592,0.01592,16363089,0</br>
+Financial Services,axp,6/22/72,1.514,1.5228,1.514,1.514,835584,0</br>
+Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0</br>
+Financial Services,axp,6/21/72,1.4866,1.4957,1.4866,1.4866,1057078,0</br>
+....</br>
 
 Command: `python OLAP.py --input input.csv --group-by ticker --count --min open --max open --mean open --min high --max high --mean high --min low --max low --mean close --min close --max close --mean close`
