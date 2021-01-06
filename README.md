@@ -5,7 +5,20 @@ This program allows you to create queries in Python to calculate the minimum, ma
 
 | Argument | Description |  | Output Format |
 |-------|-------|-------|
-
+| #1 Runs locally | Yes | sha1: 302cd1d |
+| #2.i Display whales | Yes | sha1: b99c7e8 |
+| #2.ii Display observations | Yes | sha1: 0c47e24 |
+| #3 Creates new whale records | Yes | sha1: b99c7e8 |
+| #4 Creates new observation records | Yes | sha1: df8ebef, 42395aa |
+| #5 Search whales and observations | Yes | sha1: 433b8b1, cecf0a8 |
+| #6 REST API | Yes | sha1: b917d4f, eddb6ce |
+| #7 Unit tests | Yes | sha1: 1bb994a |
+| #8.i Architecture ADR | Yes | sha1: b917d4f |
+| #8.i Front-End Design ADR | Yes | sha1: 31abba8  |
+| #9 OO Principles and MVC design | Yes | sha1: cecf0a8 |
+| Bonus: JS validation | Yes | sha1: 9dd9412, 5df308d |
+| Bonus: Hosting | Yes | whales.ericpower.ca |
+| Bonus: Data store | Yes | sha1: b99c7e8 |
 
 --top <k> <categorical-field-name>
 compute the ​top k ​most common values of categorical-field-name
