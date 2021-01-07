@@ -40,4 +40,4 @@ Command: `python OLAP.py --input input.csv --group-by ticker --count --min open 
 
 ## Output File
 
-
+[IMG](https://github.com/chloe-blankers/OLAP/blob/master/chart.PNG)
