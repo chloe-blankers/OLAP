@@ -36,10 +36,11 @@ Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0</br>
 Financial Services,axp,6/21/72,1.4866,1.4957,1.4866,1.4866,1057078,0</br>
 ....</br>
 
+## Output File
+
 Command:</br>
 `python OLAP.py --input input.csv --group-by ticker --count --min open --max open --mean open --min high --max high --mean high --min low --max low --mean close --min close --max close --mean close`
 
-## Output File
-In a table for ease of understanding
+The resulting output from this command:
 
 ![IMG](https://github.com/chloe-blankers/OLAP/blob/master/chart.PNG)
