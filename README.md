@@ -38,7 +38,7 @@ Financial Services,axp,6/21/72,1.4866,1.4957,1.4866,1.4866,1057078,0</br>
 
 ## Output File
 
-Command:</br>
+Example command:</br>
 `python OLAP.py --input input.csv --group-by ticker --count --min open --max open --mean open --min high --max high --mean high --min low --max low --mean close --min close --max close --mean close`
 
 The resulting output from this command:
