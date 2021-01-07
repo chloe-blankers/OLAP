@@ -23,7 +23,7 @@ If it’s a valid categorical field, produce an output CSV file with one row of 
 
 `python OLAP.py --input <input-file-name> [aggregate args] [--group-by <fieldname>]`
 
-## Example Input File
+## Example Input File [input.csv](https://github.com/chloe-blankers/OLAP/blob/master/input.csv) (129,046 lines)
 
 Sector,Ticker,Date,Open,High,Low,Close,Volume,OpenInt</br>
 Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0</br>
