@@ -19,6 +19,9 @@ If it’s a valid categorical field, produce an output CSV file with one row of 
 - the value of the group-by field in the first column
 - the values of any computed aggregates in subsequent columns, in the order they were specified at the command line (or just a count column, if no aggregates were requested at the command line)
 
+### Command
+
+`python OLAP.py --input <input-file-name> [aggregate args] [--group-by <fieldname>]`
 
 ### Example Input File
 
