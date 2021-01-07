@@ -1,7 +1,7 @@
 # OLAP
 This program allows you to create queries in Python to calculate the minimum, maximum, mean, sum, and count of numeric columns on a data set and perform group-by along with top-k for categorical columns.
 
-### Aggregates
+## Aggregates
 
 | Argument | Description | Output Format |
 |-------|-------|-------|
@@ -13,17 +13,17 @@ This program allows you to create queries in Python to calculate the minimum, ma
 | --count | count the number of records | an integer, or zero if there were no records |
 
 
-### Group By
+## Group By
 --group-by [categorical-field-name] </br> </br>
 If it’s a valid categorical field, produce an output CSV file with one row of output per distinct value in that field, with:
 - the value of the group-by field in the first column
 - the values of any computed aggregates in subsequent columns, in the order they were specified at the command line (or just a count column, if no aggregates were requested at the command line)
 
-### Command
+## Command
 
 `python OLAP.py --input <input-file-name> [aggregate args] [--group-by <fieldname>]`
 
-### Example Input File
+## Example Input File
 
 Sector,Ticker,Date,Open,High,Low,Close,Volume,OpenInt</br>
 Technology,intc,6/20/72,0.01592,0.01592,0.01592,0.01592,7878523,0</br>
